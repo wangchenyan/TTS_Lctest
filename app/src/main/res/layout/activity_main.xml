@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/edit"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-    />
+        android:text="《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。游戏支持包括波兰语、汉语、英语、法语、德语、葡萄牙语（巴西）、日语等10种不同语言的配音，所有配音都有相应的口型动画。" />
+
     <Button
         android:id="@+id/speak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="读出来"
-        />
-
-
-
+        android:text="读出来" />
 </LinearLayout>

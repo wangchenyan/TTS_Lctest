@@ -2,9 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "com.cdjysd.tts_lctest"
+        applicationId "me.wcy.tts"
         minSdkVersion 17
         targetSdkVersion 29
         versionCode 1
@@ -22,8 +22,13 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation project(path: ':ttsloc')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
